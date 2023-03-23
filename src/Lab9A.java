@@ -8,7 +8,6 @@ public class Lab9A {
 
         getValuesFromUser();
         searchArrayForANumber();
-        searchArrayForANumber();
     }
 
     private static void searchArrayForANumber() {
