@@ -7,9 +7,13 @@ public class Lab9B {
     public static void main(String[] args) {
         getValuesFromUser();
         bubbleSortArray();
-        System.out.println("The sorted set is: " + Arrays.toString(inputArray) + "\n");
         System.out.println(searchArrayForANumber());
+    }
 
+    private static void printArray() {
+        for (int i = 0; i < inputArray.length; i++) {
+            System.out.print(inputArray[i] + " ");
+        }
     }
 
     private static String searchArrayForANumber() {
@@ -17,6 +21,9 @@ public class Lab9B {
         System.out.print("What is the target number: ");
         int target = sc.nextInt();
         System.out.println();
+        System.out.print("The sorted set is: ");
+        printArray();
+        System.out.println("\n");
         int low = 0;
         int high = inputArray.length - 1;
         while (high >= low) {
@@ -62,5 +69,6 @@ public class Lab9B {
             System.out.print("Integer " + (i + 1) + ": ");
             inputArray[i] = sc.nextInt();
         }
+        System.out.println();
     }
 }
