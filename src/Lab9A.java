@@ -8,12 +8,12 @@ public class Lab9A {
 
         getValuesFromUser();
         searchArrayForANumber();
-        searchArrayForANumber();
     }
 
     private static void searchArrayForANumber() {
         System.out.print("What is the target number: ");
         int target = sc.nextInt();
+        System.out.println();
         boolean found = false;
         for (int i = 0; i < inputArray.length; i++) {
             if (target == inputArray[i]) {
@@ -34,5 +34,6 @@ public class Lab9A {
             System.out.print("Integer " + (i + 1) + ": ");
             inputArray[i] = sc.nextInt();
         }
+        System.out.println();
     }
 }
