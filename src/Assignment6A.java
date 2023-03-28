@@ -10,7 +10,6 @@ public class Assignment6A {
         printResults(binaryGuesses, "Binary");
         printResultsAssessment(linearLoops, "Linear", binaryGuesses, "Binary");
     }
-
     private static void printResultsAssessment(int resultA, String typeA, int resultB, String typeB) {
         if(resultB > resultA){ System.out.println(typeA + " Search is faster this time!"); }
         else if(resultB < resultA) { System.out.println(typeB + " Search is faster this time!"); }
