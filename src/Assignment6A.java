@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Assignment6A {
     static int[] array = new int[1000019];
     public static void main(String[] args) {
